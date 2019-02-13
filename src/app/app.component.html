@@ -8,13 +8,13 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
+      <div *ngFor="let name of names" class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="assets/images/imagen.jpg" alt="Card image cap">
+          <img class="card-img-top" src="assets/images/{{name}}.jpg" alt="Card image cap">
           <div class="card-body">
             <div class="d-flex">
               <div class="btn-group max-width">
-                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openLg(content)">View</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openLg(content, name)">View</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                 <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
               </div>
@@ -34,14 +34,10 @@
     </button>
   </div>
   <div class="modal-body">
-    <vg-player>
-      <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-        <source src="assets/videos/video1.mp4" type="video/mp4">
-      </video>
-    </vg-player>
+      <app-video name={{selected}}></app-video>
   </div>
   <div class="modal-footer">
-    <button type="button" ngbAutofocus class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    <button type="button" ngbAutofocus class="btn btn-light" (click)="modal.close('Close click')">Cerrar</button>
   </div>
 </ng-template>
 
