@@ -8,15 +8,15 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row">
-      <div *ngFor="let name of names" class="col-md-4">
+      <div *ngFor="let felicitacio of felicitacions" class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top" src="assets/images/{{name}}.jpg" alt="Card image cap">
+          <img class="card-img-top" src="assets/images/{{felicitacio.fotos[0]}}" alt="Card image cap">
           <div class="card-body">
-            <div class="d-flex">
-              <div class="btn-group max-width">
-                <button type="button" class="btn btn-sm btn-outline-secondary" (click)="openLg(content, name)">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button style="background-color: rgb(226, 241, 243)" class="btn btn-outline-secondary" type="button" (click)="openLg(content, felicitacio.video)"><i style="color:plum" class="fas fa-birthday-cake"></i></button>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@
     </button>
   </div>
   <div class="modal-body">
-      <app-video name={{selected}}></app-video>
+    <app-video name={{selected}}></app-video>
   </div>
   <div class="modal-footer">
     <button type="button" ngbAutofocus class="btn btn-light" (click)="modal.close('Close click')">Cerrar</button>

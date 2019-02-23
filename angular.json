@@ -29,7 +29,8 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/videogular2/fonts/videogular.css"
+              "node_modules/videogular2/fonts/videogular.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
