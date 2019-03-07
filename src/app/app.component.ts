@@ -33,15 +33,22 @@ export class AppComponent implements OnInit {
     this.modalService.open(modalFoto, { size: 'lg' });
   }
 
+  checkName(typed: string, felicitacio: Felicitacio) {
+    if (felicitacio.validNames.some(x => x == typed.toLowerCase())) {
+      felicitacio.valid = true;
+      console.log(typed);
+    }
+  }
+
   felicitacions: Felicitacio[] = [
-    { fotos: ['josep.jpeg'], video: 'josep.mp4', validNames: ['josep'], vist: false },
-    { fotos: ['merce.jpeg'], video: 'merce.mp4', validNames: ['merce'], vist: false },
-    { fotos: ['babu.jpg'], video: 'babu.mp4', validNames: ['babu'], vist: false },
-    { fotos: ['jordi.jpeg', 'yolo.jpeg'], video: 'jordi.mp4', validNames: ['jordi', 'chark', 'yolo'], vist: false },
-    { fotos: ['thais.jpeg'], video: 'thais.mp4', validNames: ['thais'], vist: false },
-    { fotos: ['vane.jpeg', 'oscar.jpeg'], video: 'vane.mp4', validNames: ['vane', 'vanesa', 'oscar'], vist: false },
-    { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], vist: false },
-    { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], vist: false },
+    { fotos: ['josep.jpeg'], video: 'josep.mp4', validNames: ['josep'], valid: false },
+    { fotos: ['merce.jpeg'], video: 'merce.mp4', validNames: ['merce'], valid: false },
+    { fotos: ['babu.jpg'], video: 'babu.mp4', validNames: ['babu'], valid: false },
+    { fotos: ['jordi.jpeg', 'yolo.jpeg'], video: 'jordi.mp4', validNames: ['jordi', 'chark', 'yolo'], valid: false },
+    { fotos: ['thais.jpeg'], video: 'thais.mp4', validNames: ['thais'], valid: false },
+    { fotos: ['vane.jpeg', 'oscar.jpeg'], video: 'vane.mp4', validNames: ['vane', 'vanesa', 'oscar'], valid: false },
+    { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], valid: false },
+    { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
   ];
 
 }

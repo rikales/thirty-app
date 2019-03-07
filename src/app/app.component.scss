@@ -1,10 +1,17 @@
 .max-width {
     width: 100%;
-  }
-  .ng-valid[required], .ng-valid.required  {
-    border-left: 5px solid #42A948; /* green */
-  }
-  
-  .ng-invalid:not(form)  {
-    border-left: 5px solid #a94442; /* red */
-  }
+}
+
+input:disabled {
+    border-left: 5px solid #42A948;
+}
+
+.input-group-append button:disabled,
+.input-group-append button[disabled]{
+  background-color: rgb(243, 200, 204)
+}
+
+.input-group-append button:enabled,
+.input-group-append button[enabled]{
+  background-color: rgb(202, 248, 221)
+}

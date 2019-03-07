@@ -12,23 +12,21 @@
         <div class="card mb-4 box-shadow">
           <ngb-carousel *ngIf="felicitacio.fotos.length > 1">
             <ng-template *ngFor="let foto of felicitacio.fotos" ngbSlide>
-              <img class="card-img-top" src="assets/images/{{foto}}" alt="Foto!" (click)="openFoto(modalFoto, foto)">
+              <img class="card-img-top" src="assets/images/{{foto}}" (click)="openFoto(modalFoto, foto)">
             </ng-template>
           </ngb-carousel>
           <img *ngIf="felicitacio.fotos.length == 1" class="card-img-top" src="assets/images/{{felicitacio.fotos[0]}}"
             (click)="openFoto(modalFoto, felicitacio.fotos[0])">
           <div class="card-body">
-            <form #myForm="ngForm">
-              <div class="input-group mb-3">
-                <input id="name" name="name" class="form-control" required type="text" aria-label="Adivina" #name="ngModel"
-                  ngModel pattern="[a-zA-Z ]*">
-                <div class="input-group-append">
-                  <button style="background-color: rgb(226, 241, 243)" class="btn btn-outline-secondary" type="submit"
-                    [disabled]="!myForm.form.valid" (click)="openLg(content, felicitacio.video)"><i style="color:plum"
-                      class="fas fa-birthday-cake"></i></button>
-                </div>
+            <div class="input-group mb-3">
+              <input class='form-control' type="text" aria-label="Adivina" ngModel
+                (ngModelChange)="checkName($event, felicitacio)" [disabled]="felicitacio.valid">
+              <div class="input-group-append">
+                <button  class="btn btn-outline-secondary" type="submit"
+                  [disabled]="!felicitacio.valid" (click)="openLg(content, felicitacio.video)"><i style="color:plum"
+                    class="fas fa-birthday-cake"></i></button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
