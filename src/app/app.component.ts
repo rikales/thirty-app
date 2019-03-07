@@ -20,7 +20,16 @@ export class AppComponent implements OnInit {
   options: Options = new Options();
 
   ngOnInit(): void {
-    console.log("init");
+    var currentIndex = this.felicitacions.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      temporaryValue = this.felicitacions[currentIndex];
+      this.felicitacions[currentIndex] = this.felicitacions[randomIndex];
+      this.felicitacions[randomIndex] = temporaryValue;
+    }
   }
 
   openLg(content, selection: string) {
@@ -49,6 +58,7 @@ export class AppComponent implements OnInit {
     { fotos: ['vane.jpeg', 'oscar.jpeg'], video: 'vane.mp4', validNames: ['vane', 'vanesa', 'oscar'], valid: false },
     { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], valid: false },
     { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
+    { fotos: ['cris.jpeg', 'dominik.jpeg'], video: 'cris.mp4', validNames: ['cris', 'cristina', 'dominik'], valid: false },
   ];
 
 }
