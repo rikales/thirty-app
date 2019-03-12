@@ -59,6 +59,13 @@ export class AppComponent implements OnInit {
     { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], valid: false },
     { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
     { fotos: ['cris.jpeg', 'dominik.jpeg'], video: 'cris.mp4', validNames: ['cris', 'cristina', 'dominik'], valid: false },
+    { fotos: ['antonio.jpeg'], video: 'antonio.mov', validNames: ['papa', 'antonio'], valid: false },
+    { fotos: ['sixta.jpeg'], video: 'sixta.mov', validNames: ['mama', 'sixta'], valid: false },
+    { fotos: ['toni.jpeg'], video: 'toni.mov', validNames: ['toni', 'antonio'], valid: false },
+    { fotos: ['dani.jpeg'], video: 'dani.mp4', validNames: ['dani'], valid: false },
+    { fotos: ['david.jpeg'], video: 'david.mp4', validNames: ['david'], valid: false },
+    { fotos: ['asuncion.jpeg'], video: 'asuncion.mp4', validNames: ['asuncion','titi'], valid: false },
+    { fotos: ['julian.jpeg'], video: 'julian.mp4', validNames: ['julian'], valid: false },
   ];
 
 }
