@@ -58,7 +58,7 @@ export class AppComponent implements OnInit {
     { fotos: ['vane.jpeg', 'oscar.jpeg'], video: 'vane.mp4', validNames: ['vane', 'vanesa', 'oscar'], valid: false },
     { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], valid: false },
     { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
-    { fotos: ['cris.jpeg', 'dominik.jpeg'], video: 'cris.mp4', validNames: ['cris', 'cristina', 'dominik'], valid: false },
+    { fotos: ['cris.jpeg', 'dominik.jpeg'], video: 'dominik.mp4', validNames: ['cris', 'cristina', 'dominik'], valid: false },
     { fotos: ['antonio.jpeg'], video: 'antonio.mov', validNames: ['papa', 'antonio'], valid: false },
     { fotos: ['sixta.jpeg'], video: 'sixta.mov', validNames: ['mama', 'sixta'], valid: false },
     { fotos: ['toni.jpeg'], video: 'toni.mov', validNames: ['toni', 'antonio'], valid: false },
@@ -67,6 +67,7 @@ export class AppComponent implements OnInit {
     { fotos: ['asuncion.jpeg'], video: 'asuncion.mp4', validNames: ['asuncion','titi'], valid: false },
     { fotos: ['julian.jpeg'], video: 'julian.mp4', validNames: ['julian'], valid: false },
     { fotos: ['yas.jpg'], video: 'yas.mp4', validNames: ['yas','santi'], valid: false },
+    { fotos: ['adria.png'], video: 'adria.mov', validNames: ['adria','gordo'], valid: false },
   ];
 
 }
