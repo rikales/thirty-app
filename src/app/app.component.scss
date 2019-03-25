@@ -7,29 +7,30 @@ input:disabled {
 }
 
 .input-group-append button:disabled,
-.input-group-append button[disabled]{
-  background-color: rgb(243, 200, 204)
+.input-group-append button[disabled] {
+    background-color: rgb(243, 200, 204)
 }
 
 .input-group-append button:enabled,
-.input-group-append button[enabled]{
-  background-color: rgb(202, 248, 221)
+.input-group-append button[enabled] {
+    background-color: rgb(202, 248, 221)
 }
 
 @font-face {
-  font-family: myFirstFont;
-  src: url("../assets/images/mountain.ttf");
+    font-family: myFirstFont;
+    src: url("../assets/images/mountain.ttf");
 }
 
 div {
-  font-family: myFirstFont;
+    font-family: myFirstFont;
 }
 
 h1 {
-  margin-top: 50px; font-size: 100px;text-shadow: 6px 1px #ffffff;
+    margin-top: 50px;
+    font-size: 100px;
+    text-shadow: 6px 1px #ffffff;
 }
 
-.b-body{
-  background-image: url('../assets/images/flags.png');
-
+.b-body {
+    background-image: url('../assets/images/flags.png');
 }

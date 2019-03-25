@@ -64,10 +64,14 @@ export class AppComponent implements OnInit {
     { fotos: ['toni.jpeg'], video: 'toni.mov', validNames: ['toni', 'antonio'], valid: false },
     { fotos: ['danic.jpeg'], video: 'dani.mp4', validNames: ['dani'], valid: false },
     { fotos: ['davidc.jpeg'], video: 'david.mp4', validNames: ['david'], valid: false },
-    { fotos: ['asuncion.jpeg'], video: 'asuncion.mp4', validNames: ['asuncion','titi'], valid: false },
+    { fotos: ['asuncion.jpeg'], video: 'asuncion.mp4', validNames: ['asuncion', 'titi'], valid: false },
     { fotos: ['julian.jpeg'], video: 'julian.mp4', validNames: ['julian'], valid: false },
-    { fotos: ['yas.jpg'], video: 'yas.mp4', validNames: ['yas','santi'], valid: false },
-    { fotos: ['adria.png'], video: 'adria.mov', validNames: ['adria','gordo'], valid: false },
+    { fotos: ['yas.jpg'], video: 'yas.mp4', validNames: ['yas', 'santi'], valid: false },
+    { fotos: ['adria.png'], video: 'adria.mov', validNames: ['adria', 'gordo'], valid: false },
+    { fotos: ['gemma.png'], video: 'gemma.mov', validNames: ['gemma', 'roger'], valid: false },
+    { fotos: ['fernando.png'], video: 'fernando.mov', validNames: ['fernando', 'carmen', 'marta'], valid: false },
+    { fotos: ['cristina.png'], video: 'cristina.mov', validNames: ['oscar', 'cristina', 'xenia'], valid: false },
+    { fotos: ['saray.png'], video: 'saray.mov', validNames: ['saray', 'david'], valid: false },
   ];
 
 }
