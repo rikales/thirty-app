@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
     { fotos: ['thais.jpeg'], video: 'thais.mp4', validNames: ['thais'], valid: false },
     { fotos: ['vane.jpeg', 'oscar.jpeg'], video: 'vane.mp4', validNames: ['vane', 'vanesa', 'oscar'], valid: false },
     { fotos: ['pilar.jpeg'], video: 'pilar.mp4', validNames: ['pilar', 'iaia', 'yaya'], valid: false },
-    { fotos: ['juan.jpeg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
+    { fotos: ['juan.jpg', 'francisca.jpeg'], video: 'juan.mp4', validNames: ['juan', 'francisca', 'tita', 'tito'], valid: false },
     { fotos: ['cris.jpeg', 'dominik.jpeg'], video: 'dominik.mp4', validNames: ['cris', 'cristina', 'dominik'], valid: false },
     { fotos: ['antonio.jpeg'], video: 'antonio.mov', validNames: ['papa', 'antonio'], valid: false },
     { fotos: ['sixta.jpeg'], video: 'sixta.mov', validNames: ['mama', 'sixta'], valid: false },
@@ -72,9 +72,10 @@ export class AppComponent implements OnInit {
     { fotos: ['fernando.jpg','marta.jpg'], video: 'fernando.mp4', validNames: ['fernando', 'carmen', 'marta'], valid: false },
     { fotos: ['cristina.jpg','oscar.jpg'], video: 'cristina.mp4', validNames: ['oscar', 'cristina', 'xenia'], valid: false },
     { fotos: ['saray.jpg'], video: 'saray.mp4', validNames: ['saray', 'david'], valid: false },
-    { fotos: ['belen.jpg'], video: 'belen.mov', validNames: ['belen', 'arnau', 'abel', 'biel', 'josep'], valid: false },
-    { fotos: ['isa.jpg'], video: 'isa.mov', validNames: ['irune', 'nerea', 'isa', 'paco'], valid: false },
+    { fotos: ['belen.jpg','josep.jpg'], video: 'belen.mov', validNames: ['belen', 'arnau', 'abel', 'biel', 'josep'], valid: false },
+    { fotos: ['isa.jpg'], video: 'isa.mp4', validNames: ['irune', 'nerea', 'isa', 'paco'], valid: false },
     { fotos: ['ricardo.jpg'], video: 'ricardo.mov', validNames: ['avi', 'ricardo'], valid: false },
+    { fotos: ['eric.jpg','maria.jpg'], video: 'eric.mov', validNames: ['eric', 'maria'], valid: false },
   ];
 
 }
