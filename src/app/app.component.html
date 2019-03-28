@@ -9,9 +9,13 @@
 </div>
 
 <div class="album py-5 bg-light b-body">
+  <h3 style="text-align:center;">
+    Crecemos contigo pero, nos reconocerás a todos?
+  </h3>
+
   <div class="container">
     <div class="row">
-      <div *ngFor="let felicitacio of felicitacions" class="col-md-4">
+      <div *ngFor="let felicitacio of felicitacions" class="col-md-3">
         <div class="card mb-4 box-shadow">
           <ngb-carousel *ngIf="felicitacio.fotos.length > 1">
             <ng-template *ngFor="let foto of felicitacio.fotos" ngbSlide>
@@ -22,12 +26,11 @@
             (click)="openFoto(modalFoto, felicitacio.fotos[0])">
           <div class="card-body">
             <div class="input-group mb-3">
-              <input class='form-control' type="text" aria-label="Adivina" ngModel
-                (ngModelChange)="checkName($event, felicitacio)" [disabled]="felicitacio.valid">
+              <input class='form-control' type="text" aria-label="Adivina" ngModel (ngModelChange)="checkName($event, felicitacio)"
+                [disabled]="felicitacio.valid">
               <div class="input-group-append">
-                <button  class="btn btn-outline-secondary" type="submit"
-                  [disabled]="!felicitacio.valid" (click)="openLg(content, felicitacio.video)"><i style="color:plum"
-                    class="fas fa-birthday-cake"></i></button>
+                <button class="btn btn-outline-secondary" type="submit" [disabled]="!felicitacio.valid" (click)="openLg(content, felicitacio.video)"><i
+                    style="color:plum" class="fas fa-birthday-cake"></i></button>
               </div>
             </div>
           </div>
